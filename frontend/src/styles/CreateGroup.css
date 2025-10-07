@@ -1,0 +1,126 @@
+.create-group-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.create-group-header {
+    font-size: 3rem;
+
+}
+
+.create-group-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+}
+
+.create-group-error {
+    color: red;
+    text-align: center;
+}
+
+.create-group-success {
+    color: green;
+    text-align: center;
+}
+
+.create-group-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.create-group-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+.create-group-label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.create-group-input {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color, #28025d);
+    background-color: #1C0049;
+    color: white;
+}
+
+.create-group-textarea {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color, #28025d);
+    background-color: #1C0049;
+    color: white;
+    resize: none;
+}
+/* 
+.create-group-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    background-color: #1C0049;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 1rem;
+    width: 200px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+} */
+
+.create-group-button:hover {
+    background-color: #2A0066;
+} 
+
+.create-group-select {
+    padding: 8px 12px;
+    font-size: 13px;
+    border: 1px solid #b794f4;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #1C0049;
+}
+
+[data-theme="light"] .create-group-select {
+    background-color: #fff;
+    color: #222;
+    border: 1px solid #b794f4;
+}
+
+[data-theme="light"] .create-group-container {
+    background-color: #DCC7FF;
+    color: #1C0049;
+}
+[data-theme="light"] .create-group-header {
+    color: #1C0049;
+}
+[data-theme="light"] .create-group-input,
+[data-theme="light"] .create-group-textarea {
+    background-color: #ede6fa;
+    color: #1C0049;
+    border: 1px solid #a259f7;
+}
+[data-theme="light"] .submit-button {
+    background-color: #a259f7;
+    color: #fff;
+}
+[data-theme="light"] .submit-button:hover {
+    background-color: #7a5cff;
+} 

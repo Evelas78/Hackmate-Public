@@ -1,0 +1,176 @@
+:root{
+    --text-color: black;
+    --contact-form-bg: #b181ff;
+}
+
+[data-theme="dark"] {
+    --text-color: #ffffff;
+    --contact-form-bg: #5a25b0;
+    /* --contact-page-bg: #1C0049; */
+  }
+
+.contact-page {
+    min-height: 100vh;
+    background-color: var(--contact-page-bg);
+    color:white;
+    padding: 2rem;
+}
+
+.contact-page h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: var(--text-color);
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    color: var(--text-color);
+}
+
+.contact-form-section {
+    background-color: var(--contact-form-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--text-color);
+}
+
+.contact-form-section h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-input {
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.1rem;
+
+    background-color: var(--contact-page-bg);
+}
+
+.contact-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.message-input {
+    resize: none;
+    min-height: 120px;
+}
+
+.contact-button {
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 200px;
+    margin: 0 auto;
+    background-color: #A855F7;
+
+}
+
+.contact-button:hover {
+    background-color: #A855F7;
+}
+
+.team-section {
+    padding: 2rem;
+}
+
+.team-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    justify-items: center;
+    color: var(--text-color);
+}
+
+@media (max-width: 1024px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+.team-member-card {
+    background-color: var(--contact-form-bg);
+    border-radius: 15px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.2s;
+    color: var(--text-color);
+}
+
+.team-member-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-member-avatar {
+    width: 120px;
+    height: 120px;
+    background-color: #3A0088;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+.member-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-member-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0;
+    color: var(--text-color);
+}
+
+.team-member-card p {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: var(--text-color);
+} 
+
+.contact-input,
+.message-input {
+    width: 100%;
+    box-sizing: border-box; 
+}

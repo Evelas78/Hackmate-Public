@@ -1,0 +1,155 @@
+.groups-page {
+    min-height: 100vh;
+    /* background-color: #764cba; */
+    /* background-color: #1C0049; */
+    /* padding: 4rem 2rem; */
+    border-radius: 30px;
+    width: 100%; /* Add this */
+    /* max-width: 1400px; Optional */
+    /* margin: 0 auto; Center if using max-width */
+}*/
+
+h5 {
+    margin-top: 1rem;
+}
+
+
+
+.groups-page h1 {
+    text-align: left;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    margin-left: 2rem;
+    font-weight: bold;
+}
+
+.groups-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.groups-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.group-row {
+    background-color: #2A0066;
+    border-radius: 20px;
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4rem;
+}
+
+.group-name {
+    font-size: 2rem;
+    font-weight: 500;
+    min-width: 200px;
+}
+
+.group-actions {
+    display: flex;
+    gap: 2rem;
+    margin-left: auto;
+}
+
+.view-button, .leave-button, .manage-button {
+    border-radius: 15px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.view-button {
+    background-color: #9333EA;
+    /* min-width: 80px; */
+    min-width: 100px;
+    padding: 0.5rem 1.5rem;
+}
+
+.manage-button {
+    background-color: #9333EA;
+    min-width: 100px;
+    padding: 0.5rem 1.5rem;
+}
+
+.leave-button {
+    background-color: rgb(211, 56, 56);
+    min-width: 100px;
+    /* padding: 0.75rem 2rem; */
+    padding: 0.5rem 1.5rem;
+
+}
+
+.view-button:hover {
+    background-color: #A855F7;
+    transform: translateY(-2px);
+}
+
+.manage-button:hover {
+    background-color: #A855F7;
+    transform: translateY(-2px);
+}
+
+.leave-button:hover {
+    background-color: #4B0099;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .groups-page h1 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .groups-container {
+        padding: 0 1rem;
+    }
+
+    .group-row {
+        padding: 1.5rem;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .group-actions {
+        width: 100%;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .view-button, .leave-button, .manage-button {
+        padding: 0.75rem 2rem;
+    }
+}
+
+[data-theme="light"] .group-row {
+    background-color: #ede6fa;
+}
+[data-theme="light"] .group-name {
+    color: #1C0049;
+}
+[data-theme="light"] .view-button, [data-theme="light"] .manage-button {
+    background-color: #a259f7;
+    color: #fff;
+}
+[data-theme="light"] .view-button:hover, [data-theme="light"] .manage-button:hover {
+    background-color: #c3a0fb;
+}
+[data-theme="light"] .leave-button {
+    background-color: #e57373;
+    color: #fff;
+}
+[data-theme="light"] .leave-button:hover {
+    background-color: #b71c1c;
+} 

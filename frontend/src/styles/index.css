@@ -1,0 +1,335 @@
+/* Ifrah 
+Description: CSS stylings for pages, buttons, images, etc.
+*/
+
+
+:root {
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  /* color: rgba(255, 255, 255, 0.87); */
+  color: #2D0075;
+  /* background-color: #242424; */
+  /* background-color: light-dark(#dcc7ff,#2D0075);*/
+  --bg-color: #dcc7ff;
+  --text-color: #000000;
+  --input-color: rgb(195, 160, 251);
+  --button-color: rgb(195, 160, 251);
+  --card-color: #a87ded;
+  --profile-textarea-color: rgb(195, 160, 251);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[data-theme="dark"] {
+  --bg-color: #2D0075;
+  --text-color: #ffffff;
+  --input-color: rgb(28, 0, 73);
+  --button-color: #1C0049;
+  --card-color: #1C0049;
+  --profile-textarea-color: #3f0b92;
+}
+
+a {
+  font-weight: 500;
+  color: #f9f9f9;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+  h1 {
+    font-size: 6em;
+    line-height: 1.1;
+    padding:20px;
+    color: var(--text-color);
+  }
+
+h2 {
+  font-size: 4em;
+  line-height: .8;
+  padding:20px;
+  color: var(--text-color);
+}
+
+h3 {
+  font-size: 2em;
+  line-height: 1.1;
+  padding:20px;
+  color: var(--text-color);
+}
+
+h4 {
+  font-size: 1.2em;
+  line-height: 1.1;
+  padding:0px;
+  color: var(--text-color);
+
+}
+
+h5 {
+  font-size: 3em;
+  line-height: 1.1;
+  padding:0px;
+  color: var(--text-color);
+
+}
+
+button {
+  width: 50%;
+  padding: 4px;
+  margin: 6px 0;
+  box-sizing: border-box;
+  border: 2px solid #1C0049;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  background-color: var(--button-color);
+  /* background-color: #1C0049;
+  color: white; */
+}
+
+/* .select-dropdown {
+  width: 100%;
+  padding: 4px;
+  margin: 6px 0;
+  box-sizing: border-box;
+  border: 2px solid #1C0049;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  background-color: var(--button-color);
+ 
+} */
+
+.select-dropdown {
+  width: 100%;
+  padding: 10px;
+  margin: 7px 0;
+  box-sizing: border-box;
+  border: 2px solid #1C0049;
+  border-radius: 20px;
+  background-color: var(--input-color);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+.link-button
+{
+  flex: 0 0 auto;
+  width: auto;
+  min-width: 400px;         
+  padding: 5px 20px;
+  background-color: var(--button-color);
+  color: var(--text-color);
+  font-size: 1.2em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.submit-button
+{
+  background-color: #1C0049;
+  color: var(--text-color);
+  font-size: 1.2em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+}
+/* button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+} */
+/* button:hover {
+  border-color: #646cff;
+} */
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #f9f9f9;
+    background-color: #2D0075;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 10em;
+  padding: .1em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+/* .logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+} */
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  background-color: var(--card-color);
+}
+
+.subtitle {
+  font-size: 30px;
+}
+
+input{
+  width: 100%;
+  padding: 10px;
+  margin: 7px 0;
+  box-sizing: border-box;
+  border: 2px solid #1C0049;
+  border-radius: 20px;
+  background-color: var(--input-color);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+textarea{
+  background-color: var(--input-color);
+  color: var(--text-color);
+}
+
+/* .split-row
+{
+  display: flex;
+  gap: 1rem;
+} */
+
+.split-row {
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  gap: 10px; 
+  margin-bottom: 10px;
+}
+
+/* .split-row-space-between {
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  gap: 30px; 
+  margin-bottom: 10px;
+} */
+
+.split-row-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 120px; 
+  margin-bottom: 10px;
+}
+
+
+.login-link {
+  padding: 20px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  line-height: normal;
+}
+
+::placeholder {
+  color: var(--text-color);
+  opacity:0.5;
+  font-size: 1.3em;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.profile-textarea {
+  /* width: 100%; */
+  width: 350px; /* wider horizontal space */
+  padding: 12px;
+  border: 1px solid #ccc;
+  background-color: var(--profile-textarea-color);
+  color: var(--text-color);
+  font-size: .8em;
+  border-radius: 8px;
+  resize: none; 
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+input.photo-selector
+{
+  display:none;
+}
+
+#profile-photo {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 100px;
+}
+
+
+/* //carousel css below */
+/* Carousel Styles (for slick carousel) */
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #6366f1 !important;
+}
