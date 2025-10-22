@@ -31,7 +31,7 @@ git clone https://github.com/Evelas78/HackMate-Public.git
 ### 2. Naviagte to the Project Directory
 Open two terminals and move into the project folder on both terminals:
 ```bash
-cd /workspaces/HackMate-Public
+cd /workspaces/HackMate-Main
 ```
 ### 3. Install Dependencies
 Install the dependencies needed for both frontend and backend (one on each terminal):
