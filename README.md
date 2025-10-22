@@ -32,12 +32,12 @@ Before running the application, ensure you have the following installed on your 
 ### 1. Clone the Repository
 Open a terminal and run the following command to clone the repository:
 ```bash
-git clone https://github.com/ihatepeanuts32/HackMate.git
+git clone https://github.com/Evelas78/HackMate-Public.git
 ```
 ### 2. Naviagte to the Project Directory
 Open two terminals and move into the project folder on both terminals:
 ```bash
-cd /workspaces/HackMate
+cd /workspaces/HackMate-Public
 ```
 ### 3. Install Dependencies
 Install the dependencies needed for both frontend and backend (one on each terminal):
