@@ -1,4 +1,4 @@
-<br>Team Name: HackMate (👉ﾟヮﾟ)👉
+<h1>HackMate</h1>
 <br><h4>Team names:</h4>
 
 - Earl Velasquez 
