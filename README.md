@@ -6,10 +6,10 @@ Team #4
 <br>Team Name: HackMate (👉ﾟヮﾟ)👉
 <br><h4>Team names:</h4>
 
+- Earl Velasquez 
 - Vaishali Sathiyachalam
 - Naomi Ntuli
 - Hrishikesh Srirangam
-- Earl Velasquez 
 - Dhakshin Parimalakumar
 - Ifrah Zainab
 - Saivishaal Sureshkannan
