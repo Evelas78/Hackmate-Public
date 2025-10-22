@@ -1,6 +1,6 @@
 <h1>HackMate</h1>
-<br><h4>Team names:</h4>
 
+<h4>Team Members:</h4>
 - Earl Velasquez 
 - Vaishali Sathiyachalam
 - Naomi Ntuli
