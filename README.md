@@ -22,7 +22,7 @@ Before running the application, ensure you have the following installed on your 
 - [npm](https://www.npmjs.com/) (comes with Node.js)
 - [Git](https://git-scm.com/) (optional, for cloning the repository)
 - [Visual Studio Code (VSCode)](https://code.visualstudio.com/)
-
+- [MongoDB] https://www.mongodb.com/
 ### 1. Clone the Repository
 Open a terminal and run the following command to clone the repository:
 ```bash
@@ -44,6 +44,15 @@ npm install
 cd frontend
 npm install
 ```
+### 4. Set up .env
+Create a MongoDB cluster then create .env
+```bash
+# Navigate to the backend folder and create a .env file
+MONGO_URI= (Mongodb+srv://(your info))
+PORT=3000
+JWT_SECRET=(Your own)
+```
+
 ### 4. Start the Servers
 Start the frontend and backend servers on their respective terminals:
 ```bash
