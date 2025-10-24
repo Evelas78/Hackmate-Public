@@ -175,4 +175,45 @@ router.put('/profile', async (req, res) => {
     }
 });
 
+
+router.delete('/delete', async (req, res) => {
+    try {
+        const { id } = req.body;
+        if (!id) {
+            return res.status(400).json({ message: "User ID is required" });
+        }
+        const user = await User.findById(id);
+
+        if (!user) {
+            return res.status(404).json({ message: "User not found" });
+        }
+
+        await User.findByIdAndDelete(id);
+
+        res.status(200).json({ message: "User deleted successfully" });
+    } catch (error) {
+        res.status(500).json({
+            message: "Error deleting user",
+            error: error.message
+        });
+    }
+});
+
+router.delete('/clear', async (req, res) => {
+    try{
+
+        const result = await User.deleteMany({});
+        return res.status(200).json({
+            message: '${result.deletedCount} groups deleted successfully.'
+        });
+
+    }catch{
+        return res.status(500).json({
+            message: "Users could not be cleared successfully", 
+            error: error.message
+        }); 
+    }
+}); 
+
+
 export default router;
