@@ -151,10 +151,11 @@ router.post('/:groupId/message/', async (req, res) =>{
         if (!decoded) {
             return res.status(401).json({ message: "Unauthorized - Invalid or missing token" });
         }
-        
+        const user = await User.findById(decoded.userId);
         // Step 2: Extract update fields from request body 
         const {message} = req.body;        
-
+        const finalMessage = `${message} - ${user.username}`;
+        
         // Step 3: Find the group by ID. Else return the message(Group not found) if group not found
         const group = await Group.findById(req.params.groupId); 
         if(!group)
@@ -163,9 +164,9 @@ router.post('/:groupId/message/', async (req, res) =>{
         }
 
         // Step 4: Add message to the list
-        group.messages.push(message);
+        group.messages.push(finalMessage);
 
-        await group.save() // Saves the updated group
+        await group.save(); // Saves the updated group
 
         // Step 5: Return with success response 
         return res.status(200).json({

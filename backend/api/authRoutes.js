@@ -337,4 +337,21 @@ router.get('/user/:id', async (req, res) => {
   }
 });
 
+router.delete('/clear', async (req, res) => {
+    try{
+        const result = await Onboarding.deleteMany({});
+        
+        return res.status(200).json({
+            message: '${result.deletedCount} profiles deleted successfully.'
+        });
+
+    }catch{
+        return res.status(500).json({
+            message: "Profiles could not be cleared successfully", 
+            error: error.message
+        }); 
+    }
+}); 
+
+
 export default router;

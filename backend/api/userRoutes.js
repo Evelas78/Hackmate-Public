@@ -201,10 +201,10 @@ router.delete('/delete', async (req, res) => {
 
 router.delete('/clear', async (req, res) => {
     try{
-
         const result = await User.deleteMany({});
+        
         return res.status(200).json({
-            message: '${result.deletedCount} groups deleted successfully.'
+            message: '${result.deletedCount} users deleted successfully.'
         });
 
     }catch{
